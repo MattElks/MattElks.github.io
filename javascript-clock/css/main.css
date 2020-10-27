@@ -1,0 +1,22 @@
+body{
+    background-color:black;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#clock{
+    border: 8px white solid;
+    color: white;
+    font-size: 60px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
