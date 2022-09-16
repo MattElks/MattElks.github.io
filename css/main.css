@@ -1,0 +1,63 @@
+body {
+  font-family: "Bungee Shade", cursive;
+  background-color: #ffe1a8;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  color: #f66e3c;
+  animation: move 2s ease-in infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(0px, 10px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  60% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.space {
+  margin-right: 10px;
+}
+.wavey {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: #56101a;
+}
+.wavey span {
+  position: relative;
+  display: inline-block;
+  animation: wavey 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes wavey {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+}
